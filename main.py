@@ -1,16 +1,11 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+calculation_to_seconds = 24 * 60 * 60
+name_of_unit = "seconds"
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def days_to_units(days):
+    print(f"{days} days are {(days * calculation_to_seconds)} {name_of_unit}")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+days_to_units(20)
+days_to_units(30)
+days_to_units(40)
