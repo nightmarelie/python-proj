@@ -9,3 +9,7 @@ def days_to_units(days):
 days_to_units(20)
 days_to_units(30)
 days_to_units(40)
+
+days = int(input("hey user, enter a number of days and I will convert it to hours!\n"))
+
+days_to_units(days)
