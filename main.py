@@ -3,12 +3,15 @@ name_of_unit = "seconds"
 
 
 def days_to_units(days):
-    print(f"{days} days are {(days * calculation_to_seconds)} {name_of_unit}")
+    if days > 0:
+        return f"{days} days are {(days * calculation_to_seconds)} {name_of_unit}"
+    else:
+        return "you entered a negative value, so no conversion for you!"
 
 
-days_to_units(20)
-days_to_units(30)
-days_to_units(40)
+print(days_to_units(22))
+print(days_to_units(30))
+print(days_to_units(40))
 
 days = int(input("hey user, enter a number of days and I will convert it to hours!\n"))
 
