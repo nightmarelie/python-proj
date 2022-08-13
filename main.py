@@ -10,6 +10,9 @@ def validate_and_execute():
     try:
         days = int(user_input)
         if user_input.isdigit():
+            # we want to do conversion only for positive integers
+            """if days > 0:
+                print(days_to_units(days))"""
             if days > 0:
                 print(days_to_units(days))
             else:
