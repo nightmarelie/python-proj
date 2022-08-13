@@ -6,13 +6,6 @@ def days_to_units(days):
     return f"{days} days are {(days * calculation_to_seconds)} {name_of_unit}"
 
 
-print(days_to_units(22))
-print(days_to_units(30))
-print(days_to_units(40))
-
-user_input = input("hey user, enter a number of days and I will convert it to hours!\n")
-
-
 def validate_and_execute():
     try:
         days = int(user_input)
@@ -27,4 +20,10 @@ def validate_and_execute():
         print("you get value error! Don't ruin my program!")
 
 
-validate_and_execute()
+print(days_to_units(22))
+print(days_to_units(30))
+print(days_to_units(40))
+
+while True:
+    user_input = input("hey user, enter a number of days and I will convert it to hours!\n")
+    validate_and_execute()
